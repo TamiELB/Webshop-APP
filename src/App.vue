@@ -1,10 +1,9 @@
 <script setup>
+import Home from './components/Home.vue';
 
 </script>
 
 <template>
-  <div class="bg-orange-600 lol">
-    <h1 class="text-cyan-300">ts</h1>
-  </div>
+  <Home></Home>
 </template>
 

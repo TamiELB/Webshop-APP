@@ -1,37 +1,22 @@
 <template>
   <div class="relative w-full h-screen">
 
-    <!-- Video Background -->
-    <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted>
-      <source src="../assets/Files/LakeBgVid.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-
     <!-- Navigation Bar -->
     <Navbar />
 
     <!-- Main Content -->
-    <div class="relative z-10 flex flex-col lg:flex-row justify-betweem items-center w-full h-full bg-black bg-opacity-50 p-8 gap-6">
+    <div class="relative z-10 flex flex-col lg:flex-row justify-betweem items-center w-full h-full p-8 gap-6">
       
-      <!-- Text Section -->
-      <div class="w-full flex justify-center items-center text-center text-white">
-        <div>
-          <h1 class="text-4xl font-bold mb-4">Welcome to My Website</h1>
-          <p class="text-lg">Discover amazing products and content. We're here to make your experience unforgettable. Explore now!</p>
+      
+      <!-- <div class="w-full text-white flex flex-col">
+        <div class="flex flex-col gap-1 overflow-hidden">
+          <ProductCard :product="products[currentIndex]" />
         </div>
-      </div>
-
-      <!-- Products -->
-      <div class="w-full text-white flex flex-col">
-      <div class="flex flex-col gap-1 overflow-hidden">
-        <ProductCard :product="products[currentIndex]" />
-      </div>
       
-      <!-- Current Item -->
-      <div class="flex justify-center gap-2">
-        <div v-on:click="changeIndex(index)" v-for="product, index in products" :key="product.name" :class="{ 'text-blue-500': index === currentIndex }"><i class="cursor-pointer text-xs size-4 pi pi-circle-fill"></i></div>
-      </div>
-      </div>
+        <div class="flex justify-center gap-2">
+          <div v-on:click="changeIndex(index)" v-for="product, index in products" :key="product.name" :class="{ 'text-blue-500': index === currentIndex }"><i class="cursor-pointer text-xs size-4 pi pi-circle-fill"></i></div>
+        </div>
+      </div> -->
 
 
     </div>

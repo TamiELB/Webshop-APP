@@ -1,0 +1,5 @@
+body {
+  background: rgb(193,166,177);
+  background: linear-gradient(164deg, rgba(193,166,177,1) 0%, rgba(255,255,255,1) 100%);
+  font-family: 'Crimson Pro', serif;
+}

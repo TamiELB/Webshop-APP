@@ -1,7 +1,7 @@
 <template>
 
   <div class="flex-1 flex justify-center items-center">
-    <div class="max-w-sm rounded-lg shadow-lg p-6 backdrop-blur-sm border border-gray-300">
+    <div class="w-96 max-w-sm rounded-lg shadow-lg p-6 backdrop-blur-sm border border-gray-300">
       <img :src="product.thumbnail" alt="Product"
         class="w-full h-48 object-cover rounded-md mb-4">
       <h2 class="text-white text-xl font-bold mb-2">{{ product.name }}</h2>
